@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+body {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+
+header {
+    width: 1920px;
+    height: 120px;
+    padding: 20px;
+    justify-content: space-between;
+    display: flex;
+    box-sizing: border-box;
+}
+header .logo a {
+    position: absolute;
+    width: 360px;
+    height: 92px;
+}
+
+header .logo img {
+    width: 70px;
+    margin: 25px;
+}
+
+header .logo h1 {
+    width: 240px;
+    font-size: 30px;
+    position: relative;
+    top: -90px;
+    left: 120px;
+}
+
+header .logo p {
+    font-size: 12px;
+    position: relative;
+    top: -90px;
+    left: 120px;
+}
+
+header .headerTop {
+    height: 20px;
+    position: relative;
+    left: 930px;
+}
+
+header .headerTop ul {
+    display: flex;
+}
+
+header .headerTop ul li a {
+    font-size: 15px;
+    margin: 8px;
+    font-weight: bold;
+}
+.searchBox {
+    position: relative;
+    top: -23px;
+    left: 320px;
+}
+.searchBox input {
+    float: left;
+    height: 18px;
+    font-size: 10px;
+    padding: 2px;
+    text-indent: 8px;
+}
+.searchBox img {
+    width: 18px;
+    border: 1px solid #333;
+    cursor: pointer;
+    padding: 3px;
+}
+
+header nav {
+    width: 1200px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 60px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {
+    color: blue;
+}
+
+nav .sub {
+    display: none;
+    border: 1px solid #000;
+}
+
+nav .sub li {
+    float: none;
+    background-color: white;
+}
+
+nav .sub li a {
+    font-size: 14px;
+    padding: 10px;
+}
+
+nav .sub li a:hover {
+    text-decoration: underline;
+}
+
+.pen {
+    width: 1920px;
+    height: 600px;
+    background-image: url(../img/pen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.pen #a1 {
+    width: 60px;
+    color: #1a15d6;
+    position: relative;
+    top: 450px;
+    left: 50px;
+    font-size: 30px;
+}
+
+.pen #a2 {
+    width: 50px;
+    position: relative;
+    top: 421px;
+    left: 110px;
+}
+
+.pen #a3 {
+    width: 80px;
+    color: #d65015;
+    position: relative;
+    top: 387px;
+    left: 165px;
+    font-size: 30px;
+}
+
+.pen #a4 {
+    width: 120px;
+    position: relative;
+    top: 358px;
+    left: 230px;
+}
+
+.pen #a5 {
+    width: 60px;
+    color: #15d623;
+    position: relative;
+    top: 324px;
+    left: 346px;
+    font-size: 30px;
+}
+
+.pen h2 {
+    color: #20552f;
+    position: relative;
+    top: 330px;
+    font-size: 30px;
+    left: 50px;
+    width: 260px;
+}
+
+.notice {
+    width: 1920px;
+    height: 400px;
+    margin-left: 80px;
+}
+
+.notice ul li {
+    width: 10px;
+    float: left;
+    font-size: 23px;
+    margin: 20px 0 0 150px;
+    
+}
+
+.notice ul li a {
+    float: left;
+    width: 500px;
+}
+
+.notice ul li a:hover {
+    text-decoration: underline;
+}
+
+.notice ul li ul {
+    position: relative;
+    left: -160px;
+    margin-top: 100px;
+}
+
+.notice ul li ul a {
+    font-size: 18px;
+}
+
+.notice ul li #c2 {
+    position: relative;
+    left: -320px;
+}
+
+.notice ul li #c3 {
+    position: relative;
+    left: -480px;
+}
+
+.notice ul li #c2,
+#c3 {
+    display: none;
+}
+
+.notice .the {
+    width: 100px;
+    font-size: 15px;
+    position: relative;
+    top: 20px;
+    float: right;
+    right: 300px;
+}
+.simgok img {
+    width: 400px;
+    height: 237px;
+    position: absolute;
+    left: 1100px;
+    top: 840px;
+}
+.photo {
+    width: 1920px;
+    height: 650px;
+    background-color: #f7f7f7;
+}
+
+.photo h1 {
+    font-size: 35px;
+    margin: 50px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.photo ul {
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+}
+.photo ul li a {
+    display: inline-block;
+}
+
+.photo ul li a p {
+    text-align: center;
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+.photo .the {
+    position: relative;
+    top: 80px;
+    right: 260px;
+    float: right;
+}
+
+.diet {
+    width: 1920px;
+    height: 500px;
+    position: relative;
+    top: 120px;
+}
+
+.diet ul li {
+    font-size: 23px;
+    margin: 20px 0 0 220px;
+}
+
+.diet ul li h1 {
+    float: left;
+    width: 130px;
+    font-size: 18px;
+    font-weight: normal;
+    position: relative;
+    top: 3px;
+}
+
+.diet ul li a:hover {
+    text-decoration: underline;
+}
+
+.diet ul li ul {
+    position: relative;
+    right: 220px;
+    margin-top: 100px;
+}
+
+.diet ul li ul h2 {
+    font-size: 18px;
+    position: relative;
+    top: 5px;
+    margin: 50px;
+    font-weight: normal;
+}
+
+.diet .the {
+    position: relative;
+    top: -5px;
+    right: 260px;
+    float: right;
+}
+.diet .food img {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 1100px;
+}
+
+.popup {
+    width: 1920px;
+    height: 500px;
+    background-color: #f7f7f7;
+    margin-bottom: 50px;
+}
+
+.popup ul {
+    width: 900px;
+    display: flex;
+    justify-content:space-around;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+.popup h1 {
+    font-size: 35px;
+    margin: 50px;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+footer {
+    width: 1920px;
+    height: 170px;
+    
+}
+footer address {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+footer address p {
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.info {
+    width: 1920px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 50px;
+}
+
+.info ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.info ul li {
+    float: left;
+}

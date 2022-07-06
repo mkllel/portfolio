@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>모바일 홈페이지</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+    <link href="css/jquery.mobile-1.4.5.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery.mobile.theme-1.4.5.css" type="text/css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js">
+    </script>
+    <!--swiper-->
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+</head>
+
+<body>
+    <section id="page1" data-role="page">
+        <header data-role="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="로고">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#page2">제품구입</a></li>
+                    <li><a href="#page3">쉐이빙팁</a></li>
+                    <li><a href="#page4">질레트 역사</a></li>
+                    <li><a href="#page5">이벤트 및 행사</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/g1.jpg" alt="g1"></div>
+                <div class="swiper-slide"><img src="img/g2.png" alt="g2"></div>
+                <div class="swiper-slide"><img src="img/g3.jpg" alt="g3"></div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <section class="box" data-role="content">
+            <h1>축구스타 손흥민과 함께하는 질레트 영상</h1>
+            <a href="#youtube" data-rel="dialog"><img src="img/son.jpg" alt="손흥민"></a>
+            <div class="razor">
+                <div class="rmenu">
+                <div class="pros">
+                            <h1>프로쉴드</h1>
+                            <div>
+                            <img src="img/Proshield.jpg" alt="프로쉴드">
+                            </div>
+                      </div>
+                        <div class="pg">
+                            <h1>프로글라이드</h1>
+                            <div>
+                            <img src="img/Proglide.jpg" alt="프로글라이드">
+                            </div>
+                        </div>
+                            <div class="maha">
+                            <h1>마하3</h1>
+                            <div>
+                            <img src="img/mach3.jpg" alt="마하3">
+                            </div>
+                        </div>
+                        <div class="edge">
+                            <h1>면도날</h1>
+                            <div>
+                            <img src="img/razor-edge.jpg" alt="면도날">
+                            </div>
+                        </div>
+                        </div> 
+                    </div>
+        </section>
+        <footer data-role="footer">
+            © 2020 PROCTER &amp; GAMBLE <br> <br>
+            한국피앤지판매유한회사 대표: NIYAZEE, BALAKA 주소 : 서울시 영등포구 국제금융로 10, 37층 사업자 등록번호: 220-86-09268
+        </footer>
+    </section>
+    <section id="youtube" data-role="page">
+        <header data-role="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="로고">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#page2">제품구입</a></li>
+                    <li><a href="#page3">쉐이빙팁</a></li>
+                    <li><a href="#page4">질레트 역사</a></li>
+                    <li><a href="#page5">이벤트 및 행사</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="content" data-role="content">
+            <h1>손흥민 X 질레트</h1>
+            <iframe src="https://www.youtube.com/embed/JTxFDII5-pw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <!--제품구입-->
+    <section id="page2" data-role="page">
+        <header data-role="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="로고">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#page2">제품구입</a></li>
+                    <li><a href="#page3">쉐이빙팁</a></li>
+                    <li><a href="#page4">질레트 역사</a></li>
+                    <li><a href="#page5">이벤트 및 행사</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="content" data-role="content">
+            <h1>제품구입</h1>
+            <a href="">면도기 &amp; 면도날</a>
+            <a href="">질레트 리필 면도날</a>
+            <a href="">면도전 &amp; 면도후</a>
+            <a href="">마하3 면도기 제품군</a>
+            <a href="">퓨전5 제품군</a>
+            <a href="">질레트 클럽</a>
+        </div>
+        <footer data-role="footer">
+            © 2020 PROCTER &amp; GAMBLE <br> <br>
+            한국피앤지판매유한회사 대표: NIYAZEE, BALAKA 주소 : 서울시 영등포구 국제금융로 10, 37층 사업자 등록번호: 220-86-09268
+        </footer>
+    </section>
+    <!--쉐이빙팁-->
+    <section id="page3" data-role="page">
+        <header data-role="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="로고">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#page2">제품구입</a></li>
+                    <li><a href="#page3">쉐이빙팁</a></li>
+                    <li><a href="#page4">질레트 역사</a></li>
+                    <li><a href="#page5">이벤트 및 행사</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="content" data-role="content">
+            <h1>쉐이빙팁</h1>
+            <a href="">얼굴 쉐이빙 팁</a>
+            <a href="">맨스케이핑</a>
+            <a href="">수염스타일</a>
+            <a href="">면도 과학</a>
+            <a href="">턱수염 다듬기</a>
+        </div>
+        <footer data-role="footer">
+            © 2020 PROCTER &amp; GAMBLE <br> <br>
+            한국피앤지판매유한회사 대표: NIYAZEE, BALAKA 주소 : 서울시 영등포구 국제금융로 10, 37층 사업자 등록번호: 220-86-09268
+        </footer>
+    </section>
+    <!--질레트 역사-->
+    <section id="page4" data-role="page">
+        <header data-role="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="로고">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#page2">제품구입</a></li>
+                    <li><a href="#page3">쉐이빙팁</a></li>
+                    <li><a href="#page4">질레트 역사</a></li>
+                    <li><a href="#page5">이벤트 및 행사</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="content" data-role="content">
+            <h1>질레트 역사</h1>
+            <a href="">질레트 역사</a>
+            <a href="">면도기 기술</a>
+            <a href="">FAQ</a>
+            <a href="">면도 유산</a>
+            <a href="">성분 용어집</a>
+            <a href="">사회 지속 가능성</a>
+            <a href="">환경 지속 가능성</a>
+            <a href="">코로나 19 대응</a>
+        </div>
+        <footer data-role="footer">
+            © 2020 PROCTER &amp; GAMBLE <br> <br>
+            한국피앤지판매유한회사 대표: NIYAZEE, BALAKA 주소 : 서울시 영등포구 국제금융로 10, 37층 사업자 등록번호: 220-86-09268
+        </footer>
+    </section>
+    <!--이벤트 및 행사-->
+    <section id="page5" data-role="page">
+        <header data-role="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="로고">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#page2">제품구입</a></li>
+                    <li><a href="#page3">쉐이빙팁</a></li>
+                    <li><a href="#page4">질레트 역사</a></li>
+                    <li><a href="#page5">이벤트 및 행사</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="content" data-role="content">
+            <h1>이벤트 및 행사</h1>
+            <h2>[네고왕] 면도기 특별 할인 이벤트</h2>
+            <div class="event">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/skintech.jpg" alt="스킨텍 파워">
+                            <h3>스킨텍 파워 1UP</h3>
+                            <p>9,900원</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/venus.jpg" alt="비너스면도기">
+                            <h3>비너스 면도기 2UP+3입</h3>
+                            <p>18,450원</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/fusion.jpg" alt="프로쉴드 옐로우 파워">
+                            <h3>프로쉴드 옐로우 파워</h3>
+                            <p>16,000원</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <footer data-role="footer">
+            © 2020 PROCTER &amp; GAMBLE <br> <br>
+            한국피앤지판매유한회사 대표: NIYAZEE, BALAKA 주소 : 서울시 영등포구 국제금융로 10, 37층 사업자 등록번호: 220-86-09268
+        </footer>
+    </section>
+
+
+
+
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+</body></html>

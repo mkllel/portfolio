@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+
+.tesla {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+header .logo {
+    width: 100%;
+}
+.logo_middle {
+    width: 0;
+    margin: 0 auto;
+}
+.logo_middle a {
+    width: 100px;
+}
+
+header nav {
+    width: 700px;
+    margin: 0 auto;
+    position: relative;
+    top: 5px;
+}
+
+header nav ul {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a {
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    color: #cfba2f;
+}
+
+header .top_menu {
+    width: 200px;
+    float: right;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+
+}
+
+header .top_menu ul {
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+
+
+.model {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    height: 850px;
+    background-image: url(../img/model.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.model_ch {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.model ul {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.model ul li {
+    float: left;
+    margin-right: 30px;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 200px;
+}
+
+.model ul li:last-child {
+    position: relative;
+    left: 500px;
+    top: -90px;
+}
+
+.model h1 {
+    font-size: 80px;
+    color: #fff;
+    position: relative;
+    top: 300px;
+    left: 50px;
+}
+
+.model h2 {
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+    top: 300px;
+    left: 50px;
+}
+
+.model_car {
+    width: 330px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.model p {
+    line-height: 30px;
+    font-weight: bold;
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+.model a {
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
+.model ul li:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #000;
+}
+
+.model ul li:hover a {
+    display: block;
+}
+
+.model ul li a:hover {
+    color: #fff;
+    background-color: #aaa;
+    border: 1px solid #aaa;
+    transition: 0.5s;
+}
+
+.store {
+    float: left;
+    width: 100%;
+    height: 850px;
+    background-image: url(../img/store.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.store_ch {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.store ul {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    top: -70px
+}
+
+.store ul li {
+    float: left;
+    margin-right: 30px;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    cursor: pointer;
+}
+
+.store ul li:last-child {
+    position: relative;
+    left: 500px;
+}
+
+.store h1 {
+    font-size: 80px;
+    color: #000;
+    position: relative;
+    top: 300px;
+    left: 50px;
+}
+
+.store h2 {
+    font-size: 40px;
+    color: #000;
+    position: relative;
+    top: 300px;
+    left: 50px;
+}
+
+.store_car {
+    width: 380px;
+    margin: 0 auto;
+}
+
+.store p {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.store p2 {
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    top: 50px;
+    color: #888;
+}
+
+.charge {
+    float: left;
+    width: 100%;
+    height: 850px;
+    background-image: url(../img/charge.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.charge_ch {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.charge ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.charge ul li {
+    float: left;
+    margin-right: 20px;
+    width: 380px;
+    height: 600px;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 30px;
+    left: 250px;
+}
+
+.charge ul li:last-child {
+    margin-right: 0;
+}
+
+.charge h1 {
+    font-size: 80px;
+    color: #fff;
+    position: relative;
+    top: 300px;
+    left: 50px;
+}
+
+.charge h2 {
+    font-size: 40px;
+    color: #000;
+    position: relative;
+    top: 250px;
+    left: 350px;
+}
+
+.charge .so {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.charge p {
+    margin-top: 50px;
+    font-size: 29px;
+}
+
+.charge p2 {
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    top: 50px;
+    color: #888;
+}
+
+.road {
+    float: left;
+    width: 100%;
+    height: 850px;
+    background-color: #000;
+}
+
+.road_ch {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.road ul {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.road ul li {
+    float: left;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 190px;
+    position: relative;
+    top: -600px;
+    left: 450px;
+}
+
+.road h1 {
+    color: #fff;
+    font-size: 80px;
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+.road h2 {
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    top: 230px;
+    left: 100px;
+}
+
+.road .star {
+    width: 1000px;
+    position: relative;
+    top: 100px;
+    left: -160px;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-color: #888;
+}
+
+footer h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+
+footer address {
+    text-align: center;
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.navi_menu {
+    width: 35px;
+    position: absolute;
+    left: 50px;
+    top: 32px;
+}
+
+.navi_close {
+    position: absolute;
+    z-index: 100;
+    background-color: #999;
+    width: 120px;
+    padding: 30px;
+    height: 750px;
+    top: 107px;
+    left: 0;
+}
+
+.navi_close h1 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navi_close a.close {
+    position: absolute;
+    width: 35px;
+    top: -75px;
+    left: 50px;
+}
+
+.navi_close nav {
+    width: 100%;
+    margin: 10px;
+}
+
+.navi_close nav ul li {
+    font-size: 17px;
+    padding: 35px 5px 30px;
+    color: #fff;
+    border-bottom: 3px solid #fff;
+    text-align: center;
+    position: relative;
+    right: 10px;
+}
+
+.navi_close nav ul li a {
+    color: #fff;
+}
