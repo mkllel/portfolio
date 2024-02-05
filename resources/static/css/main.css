@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+
+html {
+    overflow: auto;
+    background-color: #272727;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+html, body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.section {
+    width: 100%;
+    /* height: 100%; */
+    position: relative;
+}
+
+@media (max-width: 1024px) {
+    html {
+        overflow: auto;
+    }
+}
+
+/* section1 */
+
+#section1_detail {
+    position: relative;
+    top: 45%;
+    /* transform: translateY(30%); */
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 180px;
+}
+
+
+.myProfile {
+    width: 100%; 
+    max-width: 300px; 
+    display: block; 
+    margin: 0 auto 50px;
+}
+
+
+.letter {
+    /* 기존 스타일 */
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: letterAnimation 1s ease forwards;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.mob1 {
+    display: none;
+}
+
+.mob2 {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .letter {
+        font-size: 24px; /* 최소 크기 */
+    }
+}
+
+
+
+@keyframes letterAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* nth-child 선택자를 사용하여 각 글자마다 지연 시간을 설정 */
+.letter:nth-child(1) { animation-delay: 0.1s; } 
+.letter:nth-child(2) { animation-delay: 0.2s; }  
+.letter:nth-child(3) { animation-delay: 0.3s; } 
+.letter:nth-child(4) { animation-delay: 0.4s; }  
+.letter:nth-child(5) { animation-delay: 0.5s; }  
+.letter:nth-child(6) { animation-delay: 0.6s; }  
+.letter:nth-child(7) { animation-delay: 0.7s; } 
+.letter:nth-child(8) { animation-delay: 0.8s; }  
+.letter:nth-child(9) { animation-delay: 0.9s; }  
+.letter:nth-child(10) { animation-delay: 1.0s; } 
+.letter:nth-child(11) { animation-delay: 1.1s; } 
+.letter:nth-child(12) { animation-delay: 1.2s; } 
+.letter:nth-child(13) { animation-delay: 1.3s; } 
+.letter:nth-child(14) { animation-delay: 1.4s; } 
+.letter:nth-child(15) { animation-delay: 1.5s; } 
+.letter:nth-child(16) { animation-delay: 1.6s; } 
+.letter:nth-child(17) { animation-delay: 1.7s; } 
+.letter:nth-child(18) { animation-delay: 1.8s; } 
+.letter:nth-child(19) { animation-delay: 1.9s; } 
+.letter:nth-child(20) { animation-delay: 2.0s; } 
+.letter:nth-child(21) { animation-delay: 2.1s; } 
+.letter:nth-child(22) { animation-delay: 2.2s; } 
+.letter:nth-child(23) { animation-delay: 2.3s; } 
+.letter:nth-child(24) { animation-delay: 2.4s; } 
+.letter:nth-child(25) { animation-delay: 2.5s; } 
+.letter:nth-child(26) { animation-delay: 2.6s; } 
+.letter:nth-child(27) { animation-delay: 2.7s; }
+.letter:nth-child(28) { animation-delay: 2.8s; }
+.letter:nth-child(29) { animation-delay: 2.9s; } 
+.letter:nth-child(30) { animation-delay: 3.0s; }
+.letter:nth-child(31) { animation-delay: 3.1s; }
+.letter:nth-child(32) { animation-delay: 3.2s; }
+
+
+
+
+.start-animation {
+    animation: letterAnimation 1s ease forwards;
+}
+
+
+#myName {
+    text-align: center; 
+    font-size: 3vw; 
+    color: #ffffff; 
+    margin-top: 20px; 
+    display: block;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    #myName {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 500px) {
+    .myProfile {
+        max-width: 300px;
+    }
+    .letter {
+        display: none;
+    }
+    #myName {
+        display: none;
+    }
+    .mob1 {
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .mob2 {
+        display: block;
+        color: #fff;
+        font-size: 24px;
+    }
+}
+@media (max-width: 347px) {
+    .myProfile {
+        width: 100%;
+    }
+}
+
+
+/* section2 */
+
+
+.content-container {
+    width: 80%;
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: auto; /* 자동 마진을 통해 중앙 정렬 */
+    padding: 20px; /* 내부 여백 */
+}
+
+@media (max-width: 400px) {
+    .content-container {
+        width: auto;
+        max-width: none;
+        margin: auto; /* 자동 마진을 통해 중앙 정렬 */
+        padding: 0;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열로 설정 */
+    gap: 20px; /* 카드 사이의 간격 */
+    padding: 20px; /* 컨테이너 내부의 여백 */
+    word-break: keep-all;
+}
+
+@media (max-width: 400px) {
+    .grid-container {
+        padding: 0;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    opacity: 0; /* 초기에는 투명하게 설정 */
+    transform: translateY(20px); /* 아래에서부터 올라오는 효과 */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* 애니메이션 효과 */
+}
+
+.card.show {
+    opacity: 1; /* 보이게 설정 */
+    transform: translateY(0); /* 원래 위치로 설정 */
+}
+
+/* 카드 내용 스타일링 */
+.card h2 {
+    font-size: 2em; /* 제목 크기 조정 */
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.card .personal-info p, .card ul {
+    text-align: left; /* 왼쪽 정렬로 내용을 더 자연스럽게 */
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 0.5em;
+}
+
+.card .personal-info p strong, .card ul li strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.skills-category {
+    display: flex; /* Flexbox를 사용하여 자식 요소들을 가로로 정렬 */
+    flex-wrap: wrap; /* 필요에 따라 다음 줄로 넘김 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.category {
+    display: inline-table;
+    margin: 10px; /* 각 카테고리 사이의 여백 */
+}
+
+/* 나머지 스타일 유지 */
+.category h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.tech-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category img {
+    height: 40px;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.category img:hover {
+    transform: scale(1.1);
+}
+
+
+.extended {
+    grid-column: span 2; /* 그리드에서 두 칼럼을 차지하도록 설정 */
+}
+
+
+.icon-container {
+    position: relative; /* 상대적 위치 */
+    display: inline-block; /* 인라인 블록으로 설정 */
+    margin: 5px; /* 마진 설정 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.icon-container img {
+    height: 40px; /* 이미지 높이 설정 */
+    transition: transform 0.3s ease; /* 호버 효과를 위한 transition */
+}
+
+.icon-container img:hover {
+    transform: scale(1.1); /* 이미지 호버 시 확대 효과 */
+}
+
+.icon-name {
+    display: none; /* 기본적으로 이름 숨김 */
+    position: absolute; /* 절대적 위치 */
+    bottom: -20px; /* 이미지 아래에 위치 */
+    left: 50%; /* 왼쪽에서 50% */
+    transform: translateX(-50%); /* X축 기준 중앙 정렬 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+    color: #333; /* 글자색 */
+    font-size: 0.8em; /* 글자 크기 */
+}
+
+.icon-container:hover .icon-name {
+    display: block; /* 마우스 오버시 이름 표시 */
+}
+
+.channel-card .channel-link {
+    display: flex; /* Flexbox를 사용하여 아이템들을 가로로 정렬 */
+    align-items: center; /* 아이템들을 수직 중앙 정렬 */
+    gap: 10px; /* 아이콘과 링크 사이의 간격 */
+}
+
+.channel-card .channel-link img {
+    height: 40px; /* 아이콘의 크기 */
+}
+
+.channel-card .channel-link a {
+    font-size: 1em; /* 링크 글자 크기 */
+}
+/* @media (max-width: 1300px) {
+    #section2 {
+        height: 100vw;
+    }
+
+} */
+
+
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 중간 크기의 화면에서는 2열로 */
+    }
+
+    .extended {
+        grid-column: span 2; /* 중간 크기 화면에서는 2칼럼 차지 */
+    }
+
+    .card {
+        margin: 10px 0; /* 카드 마진 조정 */
+    }
+
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* 작은 화면에서는 1열로 */
+    }
+
+    .extended {
+        grid-column: span 1; /* 작은 화면에서는 1칼럼 차지 */
+    }
+
+    .card {
+        margin: 10px 0; /* 카드 마진 조정 */
+    }
+}
+
+
+
+/* section3 */
+
+/* 모든 요소에 대한 box-sizing을 border-box로 설정 */
+* {
+    box-sizing: border-box;
+}
+
+#section3 {
+    max-width: calc(100% - 80px); /* 양옆의 마진을 고려한 최대 너비 */
+    margin: 40px auto; /* 위아래로 40px 마진을 추가하여 간격 조정 */
+    overflow: hidden;
+    color: white;
+    /* height 속성 제거 또는 조정 */
+}
+.slider {
+    display: flex;
+    width: 100%; /* 양옆의 마진을 고려한 최대 너비 */
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%; /* 각 슬라이드의 너비를 100%로 설정 */
+    display: flex; /* Flex 레이아웃 적용 */
+    flex-wrap: wrap; /* 필요에 따라 아이템을 다음 줄로 넘김 */
+    align-items: center; /* 세로 방향 중앙 정렬 */
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.image_area, .text_area {
+    flex: 1;
+    /* max-width: 50%; */
+}
+
+.image_area img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text_area {
+    padding: 20px 0 0 80px;
+    word-break: keep-all;
+}
+
+.text_area a {
+    font-size: 15px;
+    color: #007bff;
+}
+
+@media (max-width: 1024px) {
+    .text_area {
+        padding: 0;
+    }
+}
+
+
+
+/* 마지막 슬라이드에는 오른쪽 마진을 추가하지 않습니다. */
+.slide:last-child {
+    margin-right: 0;
+}
+
+
+
+.slide h3 {
+    font-size: 1.5em; /* 제목의 폰트 크기 */
+    margin-bottom: 10px; /* 제목 아래 마진 추가 */
+}
+
+
+
+
+
+
+
+/* 버튼 스타일링은 유지 */
+
+#section3 .btn {
+    display: flex; /* Flexbox 레이아웃 적용 */
+    justify-content: center; /* 가로 방향으로 중앙 정렬 */
+    gap: 20px; /* 버튼 사이의 간격 */
+    margin-top: 20px; /* 버튼 상단의 여백 */
+}
+
+#prevBtn, #nextBtn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+    background-color: #f1e5d4;
+}
+
+
+/* 태블릿 및 중간 크기 화면용 스타일 */
+@media (max-width: 1024px) {
+
+    #section3 {
+        /* 필요한 스타일 조정 */
+        margin: 40px auto; /* 위아래로 40px 마진 유지 */
+    }
+
+    .slide {
+        display: block;
+        margin: 0 auto;
+        padding: 15px; /* 태블릿 화면용 패딩 조정 */
+        font-size: 0.9em; /* 태블릿 화면용 폰트 크기 조정 */
+        /* 기타 스타일링 조정 */
+    }
+
+    .image_area {
+        max-width: 100%; /* 너비를 100%로 설정하여 가운데 정렬 */
+        text-align: center; /* 텍스트 가운데 정렬 */
+        margin-bottom: 20px; /* 이미지와 텍스트 사이의 간격 */
+    }
+
+    .image_area img {
+        width: 80%; /* 이미지 크기를 조정 */
+        margin: 0 auto; /* 이미지를 가운데 정렬 */
+    }
+
+    .text_area {
+        width: 100%; /* 텍스트 영역 너비 조정 */
+        margin: 0 auto;
+        font-size: 20px;
+    }
+    .text_area h1 {
+        text-align: center;
+    }
+}
+
+
+/* 모바일 화면용 스타일 */
+@media (max-width: 480px) {
+    #section3 {
+        /* 필요한 스타일 조정 */
+        margin: 40px auto; /* 위아래로 40px 마진 유지 */
+    }
+
+    .slide {
+        padding: 10px; /* 모바일 화면용 패딩 조정 */
+        font-size: 0.8em; /* 모바일 화면용 폰트 크기 조정 */
+        /* 기타 스타일링 조정 */
+    }
+
+    .text_area {
+        font-size: 13px;
+    }
+}
+
+#btn_top {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 50px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 15;
+    background-color: #272727;
+}
+
+
+#btn_top svg {
+    width: 30px;
+    height: 50px;
+    color: #fff;
+}
+
+
+
+footer {
+    color: #fff; /* 글자색은 밝게 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    margin: 0 auto;
+    padding: 100px 0 50px;
+    word-break:keep-all;
+}
+
+@media (max-width: 480px) {
+    footer {
+        font-size: 15px;
+    }
+}
