@@ -32,6 +32,13 @@ ul, ol {
 
 /* section1 */
 
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #section1_detail {
     position: relative;
     top: 45%;
@@ -170,6 +177,12 @@ ul, ol {
 
 /* section2 */
 
+#section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 .content-container {
     width: 80%;
