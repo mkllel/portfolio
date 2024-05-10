@@ -22,6 +22,7 @@ ul, ol {
 .section {
     width: 100%;
     position: relative;
+    margin: 0;
 }
 
 @media (max-width: 1024px) {
@@ -41,7 +42,6 @@ ul, ol {
 
 #section1_detail {
     position: relative;
-    top: 45%;
     text-align: center;
     margin-top: 150px;
     margin-bottom: 180px;
